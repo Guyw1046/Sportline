@@ -1,0 +1,82 @@
+.main{width: 100%;height:100%;position: absolute;left: 0;top: 0;z-index: 1;}
+.container{height: 1049px;width: 100%;margin: 0 auto;-webkit-text-size-adjust: none;position:absolute;}
+.container:nth-child(1){}
+.container:nth-child(2){display:none}
+.container:nth-child(3){display:none}
+.container:nth-child(4){display:none}
+.container:nth-child(5){}
+img{height: auto;/* max-width: 100%; */display: block;}
+
+/* 视频图片滑动样式 */
+.swipte1,.swipte2{overflow: hidden;visibility: hidden;position: relative;}
+.swipte1_main,.swipte2_main{overflow: hidden;position: relative;}
+.swipte1_main>li,.swipte2_main>li{float:left;width:100%;position: relative;}
+
+/* 点点 */
+.pointcon1,.pointcon2{width:100%;height:28px; position:absolute;bottom:-52px;/* left:2%; */z-index:2; overflow: hidden;text-align: center;}
+.point1 li,.point2 li{display: inline-block;width:14px;height:14px;border-radius:50%;margin:0 16px;background: #b26d76;}
+.point1 li.on,.point2 li.on{ background:#fff;}
+
+/* 预约试驾按钮 */
+.drive_btn{top: 104px;right: 152px;width: 84px;height: 88px;}
+/* 车型亮点 */
+.car_window_btn{top: 104px;right: 29px;width: 97px;height: 88px;}
+.img_box{width: 465px;height: 275px;position: absolute;top: 270px;left: 89px;}
+
+/* 大图 */
+.big_img_box{position: absolute;top: 88px;left: 0;width: 640px;height: 961px;z-index: 5;background-color: #000;display: none;}
+.big_img_box div{position: relative;}
+.big_img_box a{position: absolute;top: 14px;right: 24px;width: 86px;height: 88px;}
+/* 视频页 */
+.container a{position: absolute;z-index: 2;display: inline-block;border: 0px solid red;}
+.container .a{position: absolute;z-index: 2;display: inline-block;border: 0px solid red;}
+.left_btn1,.left_btn2{top: 332px;left: 0;width: 67px;height: 198px;}
+.right_btn1,.right_btn2{top: 332px;right: 0;width: 67px;height: 98px;}
+.left_btn1,.right_btn1{top: 412px;}
+.one_btn{top: 679px;left: 26px;width: 135px;height: 145px;}
+.two_btn{top: 679px;left: 166px;width: 164px;height: 145px;}
+.three_btn{top: 679px;left: 348px;width: 125px;height: 145px;}
+.four_btn{top: 679px;left: 481px;width: 139px;height: 145px;}
+.vedio_box{z-index:1;width: 472px;height: 300px; border: 6px solid #fff;border-radius: 5px;position: absolute;top: 250px;left: 80px;text-align: center;}
+video{width: 472px;height: 300px;}
+/* 预约试驾页 */
+.data_box{position: absolute;top: 280px;left: 242px;width: 360px;height: 400px;}
+.data_box p{position: relative;height: 79px;}
+.data_box input,.data_box .dealer{width: 270px;height: 38px;border: 1px solid #0081cc;border-radius: 6px;padding-left: 6px;}
+.data_box .dealer{width: 276px;}
+.data_box select,.search_menu select{width: 106px;height: 38px;margin-right: 62px;border: 1px solid #0081cc;border-radius: 6px;}
+
+.submit_btn{top: 727px;left: 57px;width: 238px;height: 69px;}
+.search_btn{top: 727px;left: 339px;width: 238px;height: 69px;}
+
+/* 经销商查询页面 */
+.dealer_box{position: absolute;left: 83px;top: 260px;width: 503px;height: 528px;}
+.search_menu{height: 62px;padding-left: 152px;}
+.dealer_con li{/* height: 70px; */border-bottom: 1px solid #fff;padding-left: 20px;margin-bottom: 6px;line-height: 34px;}
+/* .dealer_con li h4,.dealer_con li p{height: 23px;} */
+.dealer_con{height: 460px;width: 100%;overflow: hidden;overflow-y:auto; position: relative;}
+.dealer_con ul{position: absolute;top: 0;left: 0px;}
+.close{top: 217px;right: 22px;width: 84px;height: 80px;}
+
+/* 文字 */
+.showWord{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 3;display: none;}
+/* .main{position: relative;}
+#index1,#index2,#index3,#index4,#index5{position: absolute;}
+#index1{z-index: 6}
+#index2{z-index: 5}
+#index3{z-index: 4}
+#index4{z-index: 3}
+#index5{z-index: 2} */
+
+.show{opacity: 0;-webkit-animation:show 0.4s ease 0s;-webkit-animation-fill-mode: forwards;}
+        .hide{opacity: 1;-webkit-animation:hide 0.4s ease 0s;-webkit-animation-fill-mode: forwards;}
+        @-webkit-keyframes show{
+            0%{opacity: 1;top: 1049px;}
+            80%{opacity: 1;}
+            100%{opacity: 1;top: 0px;}
+        }
+        @-webkit-keyframes hide{
+            0%{opacity: 1;top: 0px;}
+            20%{opacity: 1;}
+            100%{opacity: 1;top: -1049px;}
+        }

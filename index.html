@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">
+	<title>宝来</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+    <script src="js/common.js"></script>
+    <script src="js/hammer.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/select.js"></script>
+    
+</head>
+<body>
+	<div class="con" >
+		<div class="main">
+			<div class="container" id="step1">
+				<figure><img src="images/bg1.jpg" alt=""></figure>
+				<a class="drive_btn" href="javascript:;"></a>
+				<a class="car_window_btn" href="javascript:;"></a>
+			</div>
+			<div class="container" id="step2">
+				<figure><img src="images/bg2.jpg" alt=""></figure>
+				<div class="vedio_box">
+				    <div class="swipte1" id="swipte1">
+				        <ul class="swipte1_main" id="swipte1_main">
+				            <li>
+								<video src="vedio/video_1.mp4" id="video" controls="controls" preload="none" poster="images/superman1.png"> 
+									您的浏览器不支持视频，请更换浏览器再观看！
+								</video>
+							</li>
+							<li>
+								<video src="vedio/video_2.mp4" id="video" controls="controls" preload="none" poster="images/superman2.png"> 
+									您的浏览器不支持视频，请更换浏览器再观看！
+								</video>
+							</li>
+							<li>
+								<video src="vedio/video_3.mp4" id="video" controls="controls" preload="none" poster="images/superman3.png"> 
+									您的浏览器不支持视频，请更换浏览器再观看！
+								</video>
+							</li>
+							<li>
+								<video src="vedio/video_4.mp4" id="video" controls="controls" preload="none" poster="images/superman4.png"> 
+									您的浏览器不支持视频，请更换浏览器再观看！
+								</video>
+							</li>
+				        </ul>
+				    </div>
+					<div class="pointcon1">
+					    <ul id='mypoint1' class="point1 clearfix">
+					      <li class='on'></li>
+					      <li></li>
+					      <li></li>
+					      <li></li>
+					    </ul>
+					</div>
+				</div>
+				<a class="drive_btn" href="javascript:;"></a>
+				<a class="car_window_btn" href="javascript:;"></a>
+				<div class="left_btn1 a" href="javascript:;" ontouchend="mySwipe1.prev();" style="z-index:999;"></div>
+				<div class="right_btn1 a" href="javascript:;" ontouchend="mySwipe1.next();" style="z-index:999;"></div>
+				<a class="one_btn vedio_btn" href="javascript:;"></a>
+				<a class="two_btn vedio_btn" href="javascript:;"></a>
+				<a class="three_btn vedio_btn" href="javascript:;"></a>
+				<a class="four_btn vedio_btn" href="javascript:;"></a>
+			</div>
+			<div class="container" id="step3">
+				<figure><img src="images/bg3.jpg" alt=""></figure>
+				<div class="img_box">
+				    <div class="swipte2" id="swipte2">
+				        <ul class="swipte2_main" id="swipte2_main">
+				            <li><img src="images/small1.jpg" alt=""></li>
+				            <li><img src="images/small2.jpg" alt=""></li>
+				            <li><img src="images/small3.jpg" alt=""></li>
+				            <li><img src="images/small4.jpg" alt=""></li>
+				            <li><img src="images/small5.jpg" alt=""></li>
+				        </ul>
+				    </div>
+					<div class="pointcon2">
+					    <ul id='mypoint2' class="point2 clearfix">
+					      <li class='on'></li>
+					      <li></li>
+					      <li></li>
+					      <li></li>
+					      <li></li>
+					    </ul>
+					</div>
+				</div>
+				<a class="drive_btn" href="javascript:;"></a>
+				<a class="car_window_btn" href="javascript:;"></a>
+				<a class="left_btn2" href="javascript:;"></a>
+				<a class="right_btn2" href="javascript:;"></a>
+				<div class="big_img_box">
+					<div>
+						<img src="images/big1.jpg" alt="">
+						<a href="javascript:;" class="close"></a>
+					</div>
+				</div>
+	        </div>
+			<div class="container" id="step4">
+				<figure><img src="images/bg4.jpg" alt=""></figure>
+				<a class="drive_btn" href="javascript:;"></a>
+				<a class="car_window_btn" href="javascript:;"></a>
+				<div class="data_box">
+					<p><input class="name" type="text"></p>
+					<p><input class="tel" type="tel"></p>
+					<p><input class="email" type="email"></p>
+					<p>
+						<select class="province provinceAll" name="province" id="">
+							<option value="">请选择</option>
+						</select>
+						<select class="city cityAll" name="city" id="">
+							<option value="">请选择</option>
+						</select>
+					</p>
+					<p>
+						<select class="dealer" name="dealer" id="">
+							<option value="">请选择</option>
+						</select>
+					</p>
+				</div>
+				<a class="submit_btn" href="javascript:;"></a>
+				<a class="search_btn" href="javascript:;"></a>
+				<a href="javascript:;" class="form_close close"></a>
+	        </div>
+		</div>
+	</div>
+	<div class="showWord">
+		<div class="container">
+			<figure><img src="images/bg5.jpg" alt=""></figure>
+			<!-- <a class="drive_btn" href="javascript:;"></a>
+			<a class="car_window_btn" href="javascript:;"></a> -->
+			<div class="dealer_box">
+				<p class="search_menu">
+					<select class="dea_prevince provinceAll" name="" id="">
+						<option value="">北京</option>
+					</select>
+					<select class="dea_city cityAll" name="" id="">
+						<option value="">北京</option>
+					</select>
+				</p>
+				<div class="dealer_con">
+					<ul>
+						<!-- <li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li>
+						<li>
+							<h4>北京一汽大众汽车销售服务有限公司</h4>
+							<p>******************</p>
+							<p>***-***-***</p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:;" class="dealer_close close"></a>
+		</div>
+	</div>
+</body>
+    <script>resetPage();</script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/swipte.js"></script>
+<script src="js/index.js"></script>
+
+</html>
